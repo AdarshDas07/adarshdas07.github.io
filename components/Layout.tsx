@@ -2,7 +2,6 @@ import React from 'react';
 import { Outlet, NavLink } from 'react-router-dom';
 
 const navLinks = [
-  { path: '/', name: 'About' },
   { path: '/projects', name: 'Projects' },
   { path: '/research', name: 'Research' },
   { path: '/awards', name: 'Achievements' },
