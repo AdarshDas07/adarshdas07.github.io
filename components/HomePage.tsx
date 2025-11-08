@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { BuildingIcon, EmailIcon, GithubIcon, UserPlaceholderIcon, LinkedInIcon } from './Icons';
+import { BuildingIcon, EmailIcon, GithubIcon, LinkedInIcon } from './Icons';
 
 const academicLinks = [
   { Icon: BuildingIcon, text: 'Indian Institute of Engineering Science and Technology Shibpur (IIESTS)', href: 'https://www.iiests.ac.in/' },
@@ -58,9 +58,11 @@ const HomePage: React.FC = () => {
       <aside className="w-full md:w-1/3 lg:w-1/4 flex-shrink-0">
         <div className="sticky top-8 text-left">
           
-          <div className="w-40 h-40 rounded-full bg-gray-200 text-gray-400 flex items-center justify-center overflow-hidden border-4 border-white shadow-lg">
-            <UserPlaceholderIcon className="w-32 h-32" />
-          </div>
+          <img 
+            src="/images/profile-photo.png" 
+            alt="Adarsh Das"
+            className="w-40 h-40 rounded-full object-cover border-4 border-white shadow-lg"
+          />
 
           <h2 className="text-3xl font-bold mt-4 text-gray-800">Adarsh Das</h2>
           <p className="text-lg text-gray-600 mt-1">Undergraduate Student</p>
