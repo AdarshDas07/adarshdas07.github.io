@@ -105,11 +105,9 @@ const HomePage: React.FC = () => {
         </section>
         
         <section className="mt-12">
-            <h2 className="text-3xl font-bold text-gray-800 border-b pb-2">Research Projects</h2>
-            {/* FIX 2: Added pb-4 for symmetrical line fading */}
+            {/* Wrapped the title in an 'a' tag */}
+            <a href="/projects" className="text-3xl font-bold text-gray-800 border-b pb-2 inline-block w-full hover:text-black">Research Projects</a>
             <div className="relative mt-12 w-full max-w-4xl mx-auto pt-4 pb-4">
-                {/* Timeline Line */}
-                {/* FIX 1: Added -translate-x-1/2 to center the line relative to the dots on mobile */}
                 <div 
                     className="absolute left-6 md:left-1/2 top-0 bottom-0 w-1.5 transform -translate-x-1/2"
                     style={{ background: 'linear-gradient(to bottom, transparent, #333333 10%, #333333 90%, transparent)' }}
@@ -119,34 +117,35 @@ const HomePage: React.FC = () => {
                     {researchProjectsTimeline.map((item, index) => {
                         const isLeft = index % 2 === 0;
                         return (
-                            <div key={index} className="relative flex items-start md:items-center">
-                                {/* Dot */}
-                                <div className="absolute left-6 md:left-1/2 top-2 md:top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-7 h-7 bg-white rounded-full border-4 border-[#FF6F61] z-10"></div>
-                                
-                                {/* Content */}
-                                <div className={`w-full pl-12 text-left md:w-1/2 md:pl-0 ${isLeft ? 'md:pr-8 md:text-right' : 'md:pl-8 md:text-left md:ml-auto'}`}>
-                                    <div className={`inline-flex items-center gap-4 ${isLeft ? 'md:flex-row-reverse' : ''}`}>
-                                        <div className="relative px-4 py-2 bg-gray-100 rounded-lg shadow-sm">
-                                            <h3 className="font-bold text-gray-900 text-base">{item.title}</h3>
-                                            <div className={`
-                                                absolute top-1/2 -translate-y-1/2 w-0 h-0 
-                                                border-t-8 border-t-transparent border-b-8 border-b-transparent
-                                                left-[-8px] border-r-8 border-r-gray-100 
-                                                ${isLeft ? 'md:left-auto md:right-[-8px] md:border-r-0 md:border-l-8 md:border-l-gray-100' : ''}
-                                            `}></div>
-                                        </div>
-                                        <span className="text-sm italic text-[#FF6F61]">{item.date}</span>
-                                    </div>
+                            // Wrapped the entire timeline item in an 'a' tag
+                            <a href="/projects" key={index} className="block relative hover:opacity-80 transition-opacity">
+                                <div className="flex items-start md:items-center">
+                                    <div className="absolute left-6 md:left-1/2 top-2 md:top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-7 h-7 bg-white rounded-full border-4 border-[#FF6F61] z-10"></div>
                                     
-                                    <div className="mt-3 space-y-1">
-                                      {item.details.map((line, i) => (
-                                          <p key={i} className={i === 0 ? 'text-base text-gray-900' : 'text-sm text-gray-600'}>
-                                            {line}
-                                          </p>
-                                      ))}
+                                    <div className={`w-full pl-12 text-left md:w-1/2 md:pl-0 ${isLeft ? 'md:pr-8 md:text-right' : 'md:pl-8 md:text-left md:ml-auto'}`}>
+                                        <div className={`inline-flex items-center gap-4 ${isLeft ? 'md:flex-row-reverse' : ''}`}>
+                                            <div className="relative px-4 py-2 bg-gray-100 rounded-lg shadow-sm">
+                                                <h3 className="font-bold text-gray-900 text-base">{item.title}</h3>
+                                                <div className={`
+                                                    absolute top-1/2 -translate-y-1/2 w-0 h-0 
+                                                    border-t-8 border-t-transparent border-b-8 border-b-transparent
+                                                    left-[-8px] border-r-8 border-r-gray-100 
+                                                    ${isLeft ? 'md:left-auto md:right-[-8px] md:border-r-0 md:border-l-8 md:border-l-gray-100' : ''}
+                                                `}></div>
+                                            </div>
+                                            <span className="text-sm italic text-[#FF6F61]">{item.date}</span>
+                                        </div>
+                                        
+                                        <div className="mt-3 space-y-1">
+                                          {item.details.map((line, i) => (
+                                              <p key={i} className={i === 0 ? 'text-base text-gray-900' : 'text-sm text-gray-600'}>
+                                                {line}
+                                              </p>
+                                          ))}
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         );
                     })}
                 </div>
