@@ -1,5 +1,5 @@
 import React from 'react';
-import { Outlet, NavLink } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 
 const navLinks = [
   { path: '/projects', name: 'Projects' },
@@ -9,6 +9,8 @@ const navLinks = [
 
 const Layout: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const location = useLocation(); // Get current location
+  const currentPath = location.pathname;
 
   const activeLinkClass = 'text-black font-semibold';
   const inactiveLinkClass = 'text-gray-500 hover:text-black';
@@ -19,19 +21,21 @@ const Layout: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-16">
                 <div className="text-xl font-bold tracking-tight text-gray-900">
-                <NavLink to="/">Adarsh Das' Academic Portfolio</NavLink>
+                  {/* Changed NavLink to a standard 'a' tag to force reload */}
+                  <a href="/">Adarsh Das' Academic Portfolio</a>
                 </div>
                 <nav className="hidden md:flex items-center space-x-8">
                 {navLinks.map((link) => (
-                    <NavLink
-                    key={link.name}
-                    to={link.path}
-                    className={({ isActive }) =>
-                        `${isActive ? activeLinkClass : inactiveLinkClass} transition-colors duration-200`
-                    }
+                    // Changed NavLink to 'a' tag and manually check for active path
+                    <a
+                      key={link.name}
+                      href={link.path}
+                      className={
+                        `${currentPath === link.path ? activeLinkClass : inactiveLinkClass} transition-colors duration-200`
+                      }
                     >
-                    {link.name}
-                    </NavLink>
+                      {link.name}
+                    </a>
                 ))}
                 </nav>
                 <div className="md:hidden">
@@ -44,21 +48,21 @@ const Layout: React.FC = () => {
             </div>
         </div>
 
-        {/* FIX: Corrected typo in variable name from isMenuОpen to isMenuOpen */}
         {isMenuOpen && (
             <nav className="md:hidden bg-white border-t border-gray-200">
             <ul className="flex flex-col">
                 {navLinks.map((link) => (
                 <li key={link.name}>
-                    <NavLink
-                        to={link.path}
+                    {/* Changed NavLink to 'a' tag for the mobile menu as well */}
+                    <a
+                        href={link.path}
                         onClick={() => setIsMenuOpen(false)}
-                        className={({ isActive }) =>
-                        `block py-3 px-4 text-base font-medium ${isActive ? 'bg-gray-100 text-black font-semibold' : 'text-gray-600 hover:bg-gray-50'}`
+                        className={
+                        `block py-3 px-4 text-base font-medium ${currentPath === link.path ? 'bg-gray-100 text-black font-semibold' : 'text-gray-600 hover:bg-gray-50'}`
                         }
                     >
                         {link.name}
-                    </NavLink>
+                    </a>
                 </li>
                 ))}
             </ul>
