@@ -1,7 +1,17 @@
 import React from 'react';
 
-// Data for the first section
+// Data for the first section: Academic Awards
 const achievements = [
+  {
+    title: 'Best Undergraduate Research Thesis Award',
+    description: 'Awarded for an outstanding thesis on the "Tribological Properties of Self-Lubricating Metal Matrix Composites," recognized for its innovative approach and significant findings.',
+    imageUrl: '/images/academic-excellence.png', // <-- New sample award
+  },
+  {
+    title: 'Materials Science Excellence Scholarship',
+    description: 'Received a merit-based scholarship from the Department of Metallurgy and Materials Engineering for consistent academic excellence and contributions to the department.',
+    imageUrl: '/images/materials-award.png', // <-- New sample award
+  },
   {
     title: '2nd Prize, Carbon Nanomaterials Presentation',
     description: 'Awarded by Metallum 5.0, IIEST Shibpur for a presentation on advancing carbon nanomaterials for automotive applications. Includes a cash prize of Rs. 2000.',
@@ -14,7 +24,7 @@ const achievements = [
   }
 ];
 
-// Data for the second section
+// Data for the second section: Sports Awards
 const sportsAwards = [
   {
     title: 'Winner & Best Player Award',
@@ -72,9 +82,9 @@ const AwardsPage: React.FC = () => {
         />
       </div>
 
-      {/* Section 1: Achievements & Recognitions */}
+      {/* Section 1: Academic Awards */}
       <section className="mb-12">
-        <h1 className="text-4xl font-bold text-gray-800 mb-8 border-b pb-4">Achievements & Recognitions</h1>
+        <h1 className="text-4xl font-bold text-gray-800 mb-8 border-b pb-4">Academic Awards</h1>
         {/* Scrollable container for the grid */}
         <div className="max-h-[30rem] overflow-y-auto pr-4 custom-scrollbar">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
@@ -85,9 +95,9 @@ const AwardsPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Section 2: Sports Achievements */}
+      {/* Section 2: Sports Awards */}
       <section>
-        <h1 className="text-4xl font-bold text-gray-800 mb-8 border-b pb-4">Sports Achievements</h1>
+        <h1 className="text-4xl font-bold text-gray-800 mb-8 border-b pb-4">Sports Awards</h1>
         {/* Scrollable container for the grid */}
         <div className="max-h-[30rem] overflow-y-auto pr-4 custom-scrollbar">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
