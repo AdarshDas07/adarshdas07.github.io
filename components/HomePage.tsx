@@ -1,12 +1,11 @@
-
 import React from 'react';
 import { BuildingIcon, EmailIcon, GithubIcon, LinkedInIcon } from './Icons';
 
 const academicLinks = [
   { Icon: BuildingIcon, text: 'Indian Institute of Engineering Science and Technology Shibpur (IIESTS)', href: 'https://www.iiests.ac.in/' },
   { Icon: EmailIcon, text: 'Email', href: 'mailto:adarshdass07@gmail.com' },
-  { Icon: GithubIcon, text: 'GitHub', href: 'https://github.com/adarsh07' },
-  { Icon: LinkedInIcon, text: 'LinkedIn', href: '#', colorClass: 'text-[#007BB6]' },
+  { Icon: GithubIcon, text: 'GitHub', href: 'https://adarshdas07.github.io/' },
+  { Icon: LinkedInIcon, text: 'LinkedIn', href: 'https://www.linkedin.com/in/adarshdas07', colorClass: 'text-[#007BB6]' },
 ];
 
 const recentActivitiesTimeline = [
