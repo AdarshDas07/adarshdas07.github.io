@@ -39,6 +39,14 @@ const AwardsPage: React.FC = () => {
 
   return (
     <div className="py-8 md:py-12">
+      <div className="mb-8">
+        <img 
+          src="/images/header.jpg" 
+          alt="Achievements Header" 
+          className="w-full h-80 object-cover rounded-lg shadow-md opacity-60"
+        />
+      </div>
+
       <h1 className="text-4xl font-bold text-gray-800 mb-8 border-b pb-4">Achievements & Recognitions</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
         {awards.map((award, index) => (
