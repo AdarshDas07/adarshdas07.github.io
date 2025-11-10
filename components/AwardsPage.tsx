@@ -43,7 +43,7 @@ const AwardsPage: React.FC = () => {
         <img 
           src="/images/header.jpg" 
           alt="Achievements Header" 
-          className="w-full h-80 object-cover rounded-lg shadow-md opacity-60"
+          className="w-full h-56 md:h-80 object-cover rounded-lg shadow-md opacity-60"
         />
       </div>
 
