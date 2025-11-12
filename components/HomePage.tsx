@@ -84,7 +84,16 @@ const HomePage: React.FC = () => {
           <h2 className="text-3xl font-bold text-gray-800 border-b pb-2">About Me</h2>
           <div className="mt-4 text-lg text-gray-700 space-y-4 leading-relaxed text-justify">
             <p>
-              I am a final year undergraduate student at the Indian Institute of Engineering Science and Technology (IIEST) Shibpur, majoring in Metallurgy and Materials Engineering. I have a strong passion for computational materials science and engineering applications, with specific research interests in Molecular Dynamics Simulation, Carbon Nanomaterials, and Internal Combustion Engines.
+              I am a final year undergraduate student at the (
+               <a
+                  href="https://www.iiests.ac.in"
+                  className="font-bold text-blue-600"
+                  target="_blank"
+                  rel="noopener noreferrer"
+              >
+              Indian Institute of Engineering Science and Technology (IIEST) Shibpur
+              </a>
+              ), majoring in Metallurgy and Materials Engineering. I have a strong passion for computational materials science and engineering applications, with specific research interests in Molecular Dynamics Simulation, Carbon Nanomaterials, and Internal Combustion Engines.
             </p>
             <p>
               My academic journey has equipped me with a solid foundation in Materials Engineering principles and hands-on experience with various software tools like Python, MATLAB, SolidWorks, and Ansys. I am eager to apply my skills to solve challenging problems and contribute to innovative research projects. I am applying for PhD programs in Material Science and Engineering at US universities with a goal to expand my learning and potentially grow in my research career.
