@@ -44,10 +44,10 @@ const researchProjectsTimeline = [
 ];
 
 const recentActivitiesTimeline = [
-    { date: 'August 22, 2021', description: 'Began Bachelor of Technology in Metallurgy and Materials Engineering at Indian Institute of Engineering Science and Technology (IIEST) Shibpur.' },
-    { date: '2022', description: 'Received Winner + Best Player Award at Diamond City West Football Tournament.' },
-    { date: '2023', description: 'Attended the E-drive workshop on Electric Vehicles organized by Tech Analogy.' },
-    { date: 'Ongoing', description: 'Actively seeking research opportunities in Molecular Dynamics Simulation, Carbon Nanomaterials, and Internal Combustion Engines.' },
+    { date: 'October 2025', description: 'I, along with my team, won first prize in BGMI tournament at IIESTS cultural fest.' },
+    { date: 'August 2025 (Ongoing)', description: 'I began working on my final year thesis.' },
+    { date: 'July 2025', description: 'I completed my summer internship from Jadavpur University.' },
+    { date: 'July 2025', description: 'I played in a football tournament, reached till semi-final round.' },
 ];
 
 const HomePage: React.FC = () => {
