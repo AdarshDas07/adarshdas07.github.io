@@ -150,7 +150,6 @@ const HomePage: React.FC = () => {
         </section>
         
         <section className="mt-12">
-            {/* FIX: Removed the link from the section title */}
             <h2 className="text-3xl font-bold text-gray-800 border-b pb-2">Research Projects</h2>
             <div className="relative mt-12 w-full max-w-4xl mx-auto pt-4 pb-4">
                 <div 
@@ -162,15 +161,11 @@ const HomePage: React.FC = () => {
                     {researchProjectsTimeline.map((item, index) => {
                         const isLeft = index % 2 === 0;
                         return (
-                            // FIX: Changed the outer element back to a div
                             <div key={index} className="relative flex items-start md:items-center">
-                                {/* Dot */}
                                 <div className="absolute left-6 md:left-1/2 top-2 md:top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-7 h-7 bg-white rounded-full border-4 border-blue-600 z-10"></div>
                                 
-                                {/* Content */}
                                 <div className={`w-full pl-12 text-left md:w-1/2 md:pl-0 ${isLeft ? 'md:pr-8 md:text-right' : 'md:pl-8 md:text-left md:ml-auto'}`}>
                                     <div className={`inline-flex items-center gap-4 ${isLeft ? 'md:flex-row-reverse' : ''}`}>
-                                        {/* FIX: Wrapped only the title box in the 'a' tag */}
                                         <a href="/projects" className="relative px-4 py-2 bg-gray-100 rounded-lg shadow-sm hover:opacity-80 transition-opacity">
                                             <h3 className="font-bold text-gray-900 text-base">{item.title}</h3>
                                             <div className={`
