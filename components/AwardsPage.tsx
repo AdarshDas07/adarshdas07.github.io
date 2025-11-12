@@ -13,12 +13,12 @@ const achievements = [
     imageUrl: '/images/Adarsh-Prize_Metallum.jpeg',
   },
   {
-    title: 'Letter of Recommendation - E-Drive by TechAnalogy',
+    title: 'Letter of Recommendation - E-Drive by TechAnalogy, 2023',
     description: 'Awarded an LOR for successfully finishing and submiting a project on electric vehicles during the workshop.',
     imageUrl: '/images/AdarshDas_E-drive_LOR.png',
   },
   {
-    title: 'Certificate of Appreciation - E-Drive by TechAnalogy',
+    title: 'Certificate of Appreciation - E-Drive by TechAnalogy, 2023',
     description: 'From the E-Drive Workshop for active participation and contribution during the workshop on electric vehicles.',
     imageUrl: '/images/AdarshDas_E-drive_COA.png',
   }
@@ -68,6 +68,16 @@ const morePictures = [
     title: 'Presentation, Technical Fest - Metallum 5.0, IIEST Shibpur, 2024',
     description: 'Presenting the topic "Hydrogen liquefaction: A fundamental approach for a clean and renewable energy carrier for various applications."',
     imageUrl: '/images/event_pic3.jpg',
+  },
+  {
+    title: 'Certificate of Participation - TechAnalogy 2023',
+    description: 'E-Drive workshop by TechAnalogy',
+    imageUrl: '/images/E-Drive.png',
+  },
+  {
+    title: 'Certificate of Participation - TechAnalogy 2021',
+    description: 'Autodrift workshop by TechAnalogy',
+    imageUrl: '/images/AutoDrift.jpg',
   }
 ];
 
