@@ -120,7 +120,7 @@ const HomePage: React.FC = () => {
               >
               Md. Basiruddin Sk. 
               </a>
-              {" "}where I had studied wear perfromance and tensile behaviour of alloys. Previously, I had worked under Prof.{" "}
+              {" "}where I had studied wear performance and tensile behaviour of alloys. Previously, I had worked under Prof.{" "}
               <a
                   href="https://www.iiests.ac.in/IIEST/Faculty/metal-tapendu"
                   className="font-bold text-blue-600"
