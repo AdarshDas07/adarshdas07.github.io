@@ -91,7 +91,7 @@ const HomePage: React.FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
               >
-              Indian Institute of Engineering Science and Technology Shibpur (IIESTS)
+               Indian Institute of Engineering Science and Technology Shibpur (IIESTS)
               </a>
               , majoring in Metallurgy and Materials Engineering. Currently, I am working on my final year thesis under the supervision of Prof. 
               <a
@@ -100,7 +100,7 @@ const HomePage: React.FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
               >
-              Kaushik Das
+               Kaushik Das
               </a>
               , on thermal and tribological properties of a material. I recently did a summer internship at 
               <a
@@ -109,27 +109,27 @@ const HomePage: React.FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
               >
-              Jadavpur University 
+               Jadavpur University 
               </a>
-              under Prof. 
+               under Prof. 
               <a
                   href="https://jadavpuruniversity.in/faculty-profile/md-basiruddin-sk/"
                   className="font-bold text-red-600"
                   target="_blank"
                   rel="noopener noreferrer"
               >
-              Md. Basiruddin Sk. 
+               Md. Basiruddin Sk. 
               </a>
-              where I had studied wear perfromance and tensile behaviour of alloys. Previously, I had worked under Prof. 
+               where I had studied wear perfromance and tensile behaviour of alloys. Previously, I had worked under Prof. 
               <a
                   href="https://www.iiests.ac.in/IIEST/Faculty/metal-tapendu"
                   className="font-bold text-red-600"
                   target="_blank"
                   rel="noopener noreferrer"
               >
-              Tapendu Mandal 
+               Tapendu Mandal 
               </a>
-              where I had gained expertise on fabrication using powder metallurgy.
+               where I had gained expertise on fabrication using powder metallurgy.
             </p>
             <p>
               My academic journey has equipped me with a solid foundation in Materials Engineering principles and hands-on experience with various software tools. 
