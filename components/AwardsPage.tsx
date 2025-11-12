@@ -48,6 +48,29 @@ const sportsAwards = [
   }
 ];
 
+const morePictures = [
+  {
+    title: '2nd Prize, Technical Fest - Metallum 5.0, IIEST Shibpur, 2024',
+    description: 'Awarded "Certificate of Merit" for presenting a hypothesis on "Advancing Carbon Nanomaterials for Reduction of Automotive Engine Friction by using h-BN nanosheets and spherical W nanoparticles additives: A Hypothesis using Molecular Dynamics Simulation."',
+    imageUrl: '/images/Adarsh-Certificate.jpg',
+  },
+  {
+    title: '2nd Prize, Technical Fest - Metallum 5.0, IIEST Shibpur, 2024',
+    description: 'Receiving Award from Head of Department 2024.',
+    imageUrl: '/images/Adarsh-Prize_Metallum.jpeg',
+  },
+  {
+    title: 'Letter of Recommendation - E-Drive by TechAnalogy',
+    description: 'Awarded an LOR for successfully finishing and submiting a project on electric vehicles during the workshop.',
+    imageUrl: '/images/AdarshDas_E-drive_LOR.png',
+  },
+  {
+    title: 'Certificate of Appreciation - E-Drive by TechAnalogy',
+    description: 'From the E-Drive Workshop for active participation and contribution during the workshop on electric vehicles.',
+    imageUrl: '/images/AdarshDas_E-drive_COA.png',
+  }
+];
+
 const AwardsPage: React.FC = () => {
   const [selectedImage, setSelectedImage] = React.useState<string | null>(null);
 
@@ -93,12 +116,22 @@ const AwardsPage: React.FC = () => {
       </section>
 
       {/* Section 2: Sports Awards */}
-      <section>
+      <section className="mb-12">
         <h1 className="text-4xl font-bold text-gray-800 mb-8 border-b pb-4">Sports Awards</h1>
         {/* FIX: Removed the scrollable container div */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
           {sportsAwards.map((award, index) => (
             <AwardCard key={index} award={award} />
+          ))}
+        </div>
+      </section>
+
+      {/* Section 3: More Pictures */}
+      <section>
+        <h1 className="text-4xl font-bold text-gray-800 mb-8 border-b pb-4">More Pictures</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+          {morePictures.map((picture, index) => (
+            <AwardCard key={index} award={picture} />
           ))}
         </div>
       </section>
