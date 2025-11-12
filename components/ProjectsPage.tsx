@@ -40,6 +40,30 @@ const researchProjects = [
   },
 ];
 
+// New data for the TechFest Projects section
+const techFestProjects = [
+  {
+    title: 'Autonomous Maze-Solving Robot',
+    imageUrl: '/images/techfest-robot.png', // <-- New sample project
+    descriptionPoints: [
+      'Developed a line-following robot using Arduino and IR sensors for a competitive TechFest event.',
+      'Implemented a PID control algorithm for precise motor control, enabling smooth navigation through complex mazes.',
+      'Secured 2nd place in the robotics category for speed and accuracy in solving the maze.',
+    ],
+    link: { text: '[Video Demo]', href: '#' }
+  },
+  {
+    title: 'IoT-Based Smart Environmental Monitor',
+    imageUrl: '/images/techfest-iot.png', // <-- New sample project
+    descriptionPoints: [
+      'Engineered a smart monitoring system using an ESP32 microcontroller, and multiple environmental sensors.',
+      'Created a real-time web dashboard to visualize data on air quality, temperature, and humidity.',
+      'Presented the project at the annual TechFest, highlighting its potential for low-cost environmental monitoring solutions.',
+    ],
+    link: { text: '[GitHub]', href: '#' }
+  },
+];
+
 const ProjectItem: React.FC<{ title: string; imageUrl: string; descriptionPoints: string[]; link: { text: string; href: string } }> = ({ title, imageUrl, descriptionPoints, link }) => (
     <div className="flex flex-col md:flex-row items-start gap-8">
         <div className="md:w-1/3 lg:w-1/4 flex-shrink-0">
@@ -66,10 +90,19 @@ const ProjectsPage: React.FC = () => {
     <div className="py-8 md:py-12">
       <h1 className="text-4xl font-bold text-gray-800 mb-4">Projects</h1>
       
-      <section>
+      {/* Existing Research Projects Section */}
+      <section className="mb-12">
         <h2 className="text-3xl font-bold text-gray-700 mb-8 border-b pb-3">Research Projects</h2>
         <div className="space-y-12">
           {researchProjects.map(p => <ProjectItem key={p.title} {...p} />)}
+        </div>
+      </section>
+
+      {/* New TechFest Projects Section */}
+      <section>
+        <h2 className="text-3xl font-bold text-gray-700 mb-8 border-b pb-3">TechFest Projects</h2>
+        <div className="space-y-12">
+          {techFestProjects.map(p => <ProjectItem key={p.title} {...p} />)}
         </div>
       </section>
     </div>
