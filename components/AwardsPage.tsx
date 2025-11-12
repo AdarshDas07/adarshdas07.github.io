@@ -27,24 +27,24 @@ const achievements = [
 // Data for the second section: Sports Awards
 const sportsAwards = [
   {
-    title: 'Winner & Best Player Award',
-    description: 'At the Diamond City West Football Tournament (2022) for leading the team to victory.',
-    imageUrl: '/images/award-football.png',
+    title: 'Winner & Best Player Award - Football/Soccer',
+    description: 'At the Diamond City West Football Tournament (2024) for leading the team to victory.',
+    imageUrl: '/images/Adarsh_best_player_plus_winner_award.jpg',
   },
   {
-    title: 'Tournament Winner (Multiple)',
-    description: 'Achieved victory in several competitive cricket and online BGMI tournaments, earning cash awards.',
-    imageUrl: '/images/award-esports.png',
+    title: 'Best Player Award - Football/Soccer',
+    description: 'Being awarded the best player award at Diamond City West Football Tournament (2024).',
+    imageUrl: '/images/Adarsh_football_award.jpg',
   },
   {
-    title: '2nd Prize, Intra-School Table Tennis',
-    description: 'Secured the runner-up position in the intra-school table tennis competition at VMS (2018).',
-    imageUrl: '/images/award-table-tennis.png',
+    title: 'Certificate of Participation, Inter-School Table Tennis (2019)',
+    description: 'Represented the school in the inter-school table tennis tournament at Birla Bharati (2019).',
+    imageUrl: '/images/Adarsh_Inter-school_certificate.jpg',
   },
    {
-    title: 'Certificate of Participation',
-    description: 'Represented the school in the inter-school table tennis tournament at Birla Bharati (2019).',
-    imageUrl: '/images/award-certificate-participation.png',
+    title: '2nd Prize, Intra-School Table Tennis (2018)',
+    description: 'Secured the runner-up position in the intra-school table tennis competition at Vivekananda Mission School (2018).',
+    imageUrl: '/images/Adarsh_Intra-school_certificate.jpg',
   }
 ];
 
