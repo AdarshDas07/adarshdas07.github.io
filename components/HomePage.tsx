@@ -8,13 +8,6 @@ const academicLinks = [
   { Icon: LinkedInIcon, text: 'LinkedIn', href: 'https://www.linkedin.com/in/adarshdas07', colorClass: 'text-[#007BB6]' },
 ];
 
-const recentActivitiesTimeline = [
-    { date: 'August 22, 2021', description: 'Began Bachelor of Technology in Metallurgy and Materials Engineering at Indian Institute of Engineering Science and Technology (IIEST) Shibpur.' },
-    { date: '2022', description: 'Received Winner + Best Player Award at Diamond City West Football Tournament.' },
-    { date: '2023', description: 'Attended the E-drive workshop on Electric Vehicles organized by Tech Analogy.' },
-    { date: 'Ongoing', description: 'Actively seeking research opportunities in Molecular Dynamics Simulation, Carbon Nanomaterials, and Internal Combustion Engines.' },
-];
-
 const researchProjectsTimeline = [
   {
     date: 'Summer 2023',
@@ -50,6 +43,12 @@ const researchProjectsTimeline = [
   },
 ];
 
+const recentActivitiesTimeline = [
+    { date: 'August 22, 2021', description: 'Began Bachelor of Technology in Metallurgy and Materials Engineering at Indian Institute of Engineering Science and Technology (IIEST) Shibpur.' },
+    { date: '2022', description: 'Received Winner + Best Player Award at Diamond City West Football Tournament.' },
+    { date: '2023', description: 'Attended the E-drive workshop on Electric Vehicles organized by Tech Analogy.' },
+    { date: 'Ongoing', description: 'Actively seeking research opportunities in Molecular Dynamics Simulation, Carbon Nanomaterials, and Internal Combustion Engines.' },
+];
 
 const HomePage: React.FC = () => {
   return (
@@ -136,18 +135,6 @@ const HomePage: React.FC = () => {
             </p>
           </div>
         </section>
-
-        <section className="mt-12">
-          <h2 className="text-3xl font-bold text-gray-800 border-b pb-2">Recent Activities</h2>
-          <ul className="mt-4 space-y-6">
-            {recentActivitiesTimeline.map((item, index) => (
-              <li key={index} className="flex flex-col sm:flex-row gap-2 sm:gap-6">
-                <p className="font-mono font-bold text-lg text-blue-600 w-full sm:w-40 flex-shrink-0">{item.date}</p>
-                <p className="text-gray-700">{item.description}</p>
-              </li>
-            ))}
-          </ul>
-        </section>
         
         <section className="mt-12">
             {/* FIX: Removed the link from the section title */}
@@ -196,6 +183,18 @@ const HomePage: React.FC = () => {
                     })}
                 </div>
             </div>
+        </section>
+
+        <section className="mt-12">
+          <h2 className="text-3xl font-bold text-gray-800 border-b pb-2">Recent Activities</h2>
+          <ul className="mt-4 space-y-6">
+            {recentActivitiesTimeline.map((item, index) => (
+              <li key={index} className="flex flex-col sm:flex-row gap-2 sm:gap-6">
+                <p className="font-mono font-bold text-lg text-blue-600 w-full sm:w-40 flex-shrink-0">{item.date}</p>
+                <p className="text-gray-700">{item.description}</p>
+              </li>
+            ))}
+          </ul>
         </section>
       </main>
     </div>
