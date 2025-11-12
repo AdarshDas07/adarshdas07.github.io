@@ -14,6 +14,7 @@ const researchProjectsTimeline = [
     title: 'Final Year Thesis',
     details: [
       'Research Intern (Mentor: Prof. Kaushik Das)',
+      'IIESTS',
       'Simulation study on the effect of carbon nanoparticle additives on base fluid properties.'
     ],
   },
@@ -22,6 +23,7 @@ const researchProjectsTimeline = [
     title: 'Summer Research Internship',
     details: [
         'Course Project (Mentors: Tech Analogy)',
+        'Jadavpur University',
         'Designed an F1 car chassis in SolidWorks and performed aerodynamic analysis using Ansys and MATLAB.'
     ],
   },
@@ -30,6 +32,7 @@ const researchProjectsTimeline = [
     title: 'Adhesive EEG Device',
     details: [
         'Bachelor Capstone Project',
+        'IIESTS',
         'Constructed a compact wearable EEG chip (based on TGAM) for monitoring sleep spindle.'
     ],
   },
@@ -38,6 +41,7 @@ const researchProjectsTimeline = [
     title: 'Material Characterization',
     details: [
         'Course Project',
+        'IIESTS',
         'Analyzed mechanical properties of various alloys using tensile testing and microscopy.'
     ],
   },
@@ -172,7 +176,13 @@ const HomePage: React.FC = () => {
                                     
                                     <div className="mt-3 space-y-1">
                                       {item.details.map((line, i) => (
-                                          <p key={i} className={i === 0 ? 'text-base text-gray-900' : 'text-sm text-gray-600'}>
+                                          <p key={i} 
+                                            className={
+                                              i === 0 
+                                                ? 'text-base text-gray-900'  
+                                                : i ===1
+                                                  ? 'text-base font-bold text-blue-600'
+                                                  : 'text-sm text-gray-600'}>
                                             {line}
                                           </p>
                                       ))}
