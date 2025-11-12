@@ -15,12 +15,12 @@ const achievements = [
   {
     title: 'Letter of Recommendation - E-Drive by TechAnalogy',
     description: 'Awarded an LOR for successfully finishing and submiting a project on electric vehicles during the workshop.',
-    pdfUrl: '/Documents/AdarshDas_E-drive_LOR.pdf',
+    imageUrl: '/Documents/AdarshDas_E-drive_LOR.pdf',
   },
   {
     title: 'Certificate of Appreciation - E-Drive by TechAnalogy',
     description: 'From the E-Drive Workshop for active participation and contribution during the workshop on electric vehicles.',
-    pdfUrl: '/Documents/AdarshDas_E-drive_COA.pdf',
+    imageUrl: '/Documents/AdarshDas_E-drive_COA.pdf',
   }
 ];
 
