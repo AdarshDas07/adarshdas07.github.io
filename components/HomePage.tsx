@@ -97,7 +97,7 @@ const HomePage: React.FC = () => {
           <ul className="mt-4 space-y-6">
             {recentActivitiesTimeline.map((item, index) => (
               <li key={index} className="flex flex-col sm:flex-row gap-2 sm:gap-6">
-                <p className="font-mono font-bold text-sm text-red-500 w-full sm:w-40 flex-shrink-0">{item.date}</p>
+                <p className="font-mono font-bold text-lg text-red-500 w-full sm:w-40 flex-shrink-0">{item.date}</p>
                 <p className="text-gray-700">{item.description}</p>
               </li>
             ))}
