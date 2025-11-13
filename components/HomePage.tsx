@@ -137,7 +137,7 @@ const HomePage: React.FC = () => {
             <p>
               {" "}My academic journey has equipped me with a solid foundation in Materials Engineering principles and hands-on experience with various software tools. Here is my{" "}
               <a
-                  href="#"
+                  href="/Documents/ADARSH DAS_Resume-GitHub.pdf"
                   className="text-blue-600"
                   target="_blank"
                   rel="noopener noreferrer"
