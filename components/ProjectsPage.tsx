@@ -135,5 +135,4 @@ const ResearchComponent: React.FC = () => {
   );
 };
 
-export default ResearchComponent;
 export default ProjectsPage;
