@@ -62,7 +62,7 @@ const morePictures = [
   {
     title: 'Poster Competition, Technical Fest - Metallum 5.0, IIEST Shibpur, 2024',
     description: 'Presented a Poster on "Current Trends of Giga-Casting Technology in Car Manufacturing."',
-    imageUrl: '/images/event_pic.jpeg',
+    imageUrl: '/images/event_pic5.jpeg',
   },
   {
     title: 'Presentation, Technical Fest - Metallum 5.0, IIEST Shibpur, 2024',
