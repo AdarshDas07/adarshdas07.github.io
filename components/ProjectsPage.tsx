@@ -31,6 +31,16 @@ const academicProjects = [
       'By tuning this speed, engineers can tailor weld microstructure and performance for different applications.',
     ],
     link: { text: '[PPT]', href: '/Documents/Friction Stir Welding(Adarsh Das).pdf' }
+  },
+  {
+    title: 'Game using Python',
+    imageUrl: '/images/Game-python.png',
+    descriptionPoints: [
+      'Built a 2D endless runner game in Python using Pygame with smooth character jumping.',
+      'Implemented random enemy spawning, obstacle movement, and collision detection to create a dynamic, replayable challenge.',
+      'Designed a live scoring system and game loop that tracks survival time and resets the game state when the run ends.',
+    ],
+    link: { text: '[GitHub]', href: 'https://github.com/AdarshDas07/Game-using-Python/tree/main' }
   }
 ];
 
@@ -118,7 +128,7 @@ const ProjectsPage: React.FC = () => {
 
       {/* Research section on TOP */}
       <section className="mb-12">
-        <h2 className="text-4xl font-bold text-gray-800 mb-8 border-b pb-4">
+        <h2 className="text-4xl font-bold text-gray-700 mb-8 border-b pb-4">
           Research Projects
         </h2>
         <div className="grid md:grid-cols-1 gap-8">
